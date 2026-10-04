@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home – Benjamin Benčina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/rss+xml" title="rss" href="feed.xml">
+  </head>
+
+  <body>
+    <a href="#" id="back-to-top">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 19V7M6 13l6-6 6 6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <header>
+      <h1>Benjamin Benčina</h1>
+      <nav>
+        <a href="#">Home</a> ·
+        <a href="#news">News</a> ·
+        <a href="#papers">Papers</a> ·
+        <a href="#talks">Talks</a> ·
+        <a href="feed.xml">RSS</a>
+      </nav>
+    </header>
+
+    <main>
+      <hr>
+
+      <section id="bio">
+        <img class="profile" alt="This is Ben." title="Is this Ben?" src="ben.jpeg">
+        <div class="contact">
+        <span class="contact-type">Email:</span>
+        <span class="contact-info">benjamin bencina at aalto fi</span>
+        </div>
+        <p>
+        I'm a researcher in the Department of Computer Science at Aalto University.
+        I'm a post-graduate researcher in the Information Security Group at Royal Holloway, University of London (RHUL) and part of the EPSRC Centre for Doctoral Training (<a href="https://royalholloway.ac.uk/research-and-teaching/departments-and-schools/information-security/studying-here/centre-for-doctoral-training-in-cyber-security-for-the-everyday/current-cdt-researchers/">CDT</a>) in Cyber Security for the Everyday. I'm also part of the Cryptography Caucus at King's College London (KCL).
+        My research deals with various aspects of post-quantum cryptography, but I mainly study lattices and linear codes with a particular interest in equivalence problems.
+        I'm also interested in computational aspects of algebra and number theory.
+        </p>
+        <p>
+        I hold a BSc and a MSc degree in Mathematics from University of Ljubljana, Faculty of Mathematics and Physics (UL FMF).
+        My MSc thesis is on non-commutative Gröbner bases and algorithms computing them.
+        Before starting my PhD, I was employed part-time as a teacher ("asistent") at UL FMF and part-time at XLAB Research as a software engineer.
+        </p>
+        <!-- <p> -->
+        <!-- My last name is <tt>Ben{\v c}ina</tt> in LaTeX. -->
+        <!-- </p> -->
+      </section>
+
+      <hr>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul>
+<li><span class="news-when">2026-10-07:</span> <span class="news-what">New preprint titled "Algorithms for Sampling Self-Orthogonal and Totally Self-Orthogonal Codes in Odd Characteristic" is now on <a href="https://arxiv.org/abs/2610.08664">arXiv</a>.</span></li>
+<li><span class="news-when">2026-09-26:</span> <span class="news-what">New preprint titled "On the Limits of LWE and PCE based UPKE" is now on <a href="https://eprint.iacr.org/2026/2164">ePrint</a>.</span></li>
+<li><span class="news-when">2026-09-22:</span> <span class="news-what">Preprint titled "On Arithmetic Invariants for Permutation Equivalence" has been updated on <a href="https://eprint.iacr.org/2026/995">ePrint</a>.</span></li>
+</ul>
+
+        <p>
+        See older posts at the <a href="news-archive.html">news archive</a>.
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="papers">
+        <h2>Papers</h2>
+        <h3>Preprints</h3>
+<ol reversed start=7>
+<li><details>
+<summary><span class="pub-title">Algorithms for Sampling Self-Orthogonal and Totally Self-Orthogonal Codes in Odd Characteristic</span><br><span class="pub-author">M. R. Albrecht, B. Benčina, R. W. F. Lai.</span> <span class="pub-where">arXiv:2610.08664 [cs.IT].</span> <span class="pub-link"><a href="https://arxiv.org/abs/2610.08664">arxiv</a></span></summary>
+<div class="pub-abs"><p>We give an algorithm that samples uniformly random linear codes of any hull dimension and type over finite fields of odd characteristic, implying the first algorithm for sampling uniformly random self-orthogonal codes of any rate, including self-dual codes. Our algorithm is a re-visitation of the algorithm given by Albrecht, Benčina and Lai (EC'25), using the mass formulae proven by Li, Shi and Ling (IEEE Trans. Inf. Theory 71(1)). This allows us to instantiate code-based cryptographic schemes that rely on the hardness of Permutation Code Equivalence (PCE) on `random' self-dual codes for security and that were previously unable to sample them. Building on the observation by Bardet, Otmani and Saeed-Taha (ISIT'19) that Euclidean orthogonality is insufficient when considering PCE over finite extension fields due to non-trivial Galois automorphisms, we study the behaviour of what we call total orthogonality, that is orthogonality with respect to all induced Galois geometries simultaneously. We characterise total orthogonality of vectors and codes, and give an algorithm that samples linear codes with a total hull of a prescribed dimension; a subcode that acts as the hull in all Galois geometries of the ambient space. The algorithm incurs a rate decrease by a factor equal to the extension degree, however, we argue why this may be necessary in the context of PCE and explore how it limits the practicality of our algorithm. We consider the notion of Galois type of a linear code when Galois hulls are symmetric and show that all linear codes have constant Hermitian type.</p></div>
+</details></li>
+<li><details>
+<summary><span class="pub-title">On the Limits of LWE and PCE based UPKE</span><br><span class="pub-author">M. R. Albrecht, B. Benčina, R. W. F. Lai.</span> <span class="pub-where">Cryptology ePrint Archive, Paper 2026/2164.</span> <span class="pub-link"><a href="https://eprint.iacr.org/2026/2164">eprint</a></span></summary>
+<div class="pub-abs"><p>Updatable Public-Key Encryption (UPKE) enables forward secrecy in asynchronous settings like secure group messaging. At EC'25, Albrecht, Benčina and Lai proposed the first plausibly post-quantum UPKE scheme supporting unlimited updates, based on permutation code equivalence (PCE) over finite fields and hollow lattice problems. However, it has impractically large public keys (4.8MiB) and ciphertexts (1.5MiB).</p> <p>In this work, we first replace the information-theoretic Hollow LHL with a computational assumption secure under binary-secret binary-error LWE, reducing key sizes by an order of magnitude. Second, we show that generalising to Module-LWE is not beneficial: PCE instances over $\mathbb{F}_{q^d}$ admit a linearisation attack via the $q$-Frobenius structure, enabling recovery of secret isometries unless code rates are inflated by $d$, negating any size benefit from module lattices. Third, we establish IND-CCA security in the model of Alwen, Fuchsbauer and Mularczyk (EC'24), but do not achieve `joiner security' like other post-quantum candidates.</p> <p>Finally, we introduce a heuristic multi-key variant using matrix-valued secret keys, enabling efficient encryption of $\ell$ bits per ciphertext. We define the Hinted SPCE assumption to capture the main cryptanalytic challenge and show that the performance gain is likely too small to justify adoption, unless the new assumption can be avoided.</p> <p>Overall, our `unlimited' scheme has update sizes 3.5 to 10 times larger than lattice-based schemes limited to $2^{20}$ updates, depending on the aggressiveness of parameter choices.</p></div>
+</details></li>
+<li><details>
+<summary><span class="pub-title">On Arithmetic Invariants for Permutation Equivalence</span><br><span class="pub-author">B. Benčina.</span> <span class="pub-where">Cryptology ePrint Archive, Paper 2026/995.</span> <span class="pub-link"><a href="https://eprint.iacr.org/2026/995">eprint</a></span></summary>
+<div class="pub-abs"><p>We give an efficiently computable invariant we call the square class invariant for the (Signed) Permutation Code Equivalence ((S)PCE) problem, that was previously not recognised in coding theory, which arises from the arithmetic of quadratic forms over finite fields. Our invariant naturally yields a distinguisher for the decision version of (S)PCE as defined at Eurocrypt 2025 by Albrecht, Benčina and Lai [ABL25], breaking the hardness assumption that underpins the security of their updatable public-key encryption scheme.</p> <p>We extend a 2023 result by Bruin, Ducas and Gibbons by fully classifying the genera of $q$-ary lattices, showing the genus is completely determined by the hull dimension and our square class invariant of the underlying linear code, and that none of these genera split non-trivially into spinor genera (as soon as the lattice dimension is at least 5), implying the genus of a $q$-ary lattice encodes all known efficiently computable coding-theoretic invariants for (S)PCE and vice versa. Thus our distinguisher can also be seen as comparing the genera of Construction A lattices of the (S)PCE instance in the spirit of the Lattice Isomorphism Problem. We give a complete description of the genus distribution of uniform $q$-ary lattices.</p> <p>This motivates the definition of a genus of a linear code as the genus of the Construction A lattice of any of its generator matrices. We adapt the sampling algorithm from [ABL25] to sample from a single genus uniformly at random and can thus restrict their hardness assumption for (S)PCE to a single genus. Restricting PCE to one genus and using our sampling algorithm is then used with a slight modification to the security proof to mend the scheme from [ABL25].</p></div>
+</details></li>
+</ol>
+
+<h3>Publications</h3>
+<ol reversed>
+<li><details>
+<summary><span class="pub-title">Post-quantum Cryptographic Analysis of SSH</span><br><span class="pub-author">B. Benčina, B. Dowling, V. Maram, K. Xagawa.</span> <span class="pub-where">IEEE Security & Privacy 2025.</span> <span class="pub-link"><a href="https://github.com/pq-ssh-bench/SnP25-experiments">artifacts</a>·<a href="https://doi.org/10.1109/SP61157.2025.00126">doi</a>·<a href="https://eprint.iacr.org/2025/684">eprint</a></span></summary>
+<div class="pub-abs"><p>The Secure Shell (SSH) protocol is one of the first security protocols on the Internet to upgrade itself to resist attacks against future quantum computers, with the default adoption of the "quantum (otherwise, classically)" secure hybrid key exchange in OpenSSH from April 2022. However, there is a lack of a comprehensive security analysis of this quantum-resistant version of SSH in the literature: related works either focus on the hybrid key exchange in isolation and do not consider security of the overall protocol, or analyze the protocol in security models which are not appropriate for SSH, especially in the "post-quantum" setting.</p> <p>In this paper, we remedy the state of affairs by providing a thorough post-quantum cryptographic analysis of SSH. We follow a "top-down" approach wherein we first prove security of SSH in a more appropriate model, namely, our post-quantum extension of the so-called authenticated and confidential channel establishment (ACCE) protocol security model; our extension which captures "harvest now, decrypt later" attacks could be of independent interest. Then we establish the cryptographic properties of SSH's underlying primitives, as concretely instantiated in practice, based on our protocol-level ACCE security analysis: for example, we prove relevant cryptographic properties of "Streamlined NTRU Prime", a key encapsulation mechanism (KEM) which is used in recent versions of OpenSSH and TinySSH, in the quantum random oracle model, and address open problems related to its analysis in the literature. Notably, our ACCE security analysis of post-quantum SSH relies on the weaker notion of IND-CPA security of the ephemeral KEMs used in the hybrid key exchange. This is in contrast to prior works which rely on the stronger assumption of IND-CCA secure ephemeral KEMs. Hence we conclude the paper with a discussion on potentially replacing IND-CCA secure KEMs in current post-quantum implementations of SSH with simpler and faster IND-CPA secure counterparts, and also provide the corresponding benchmarks.</p></div>
+</details></li>
+<li><details>
+<summary><span class="pub-title">Hollow LWE: A New Spin, Unbounded Updatable Encryption from LWE and PCE</span><br><span class="pub-author">M. R. Albrecht, B. Benčina, R. W. F. Lai.</span> <span class="pub-where">EUROCRYPT 2025.</span> <span class="pub-link"><a href="https://artifacts.iacr.org/eurocrypt/2025/a9">artifacts</a>·<a href="https://doi.org/10.1007/978-3-031-91101-9_13">doi</a>·<a href="https://eprint.iacr.org/2025/340">eprint</a></span></summary>
+<div class="pub-abs"><p>Updatable public-key encryption (UPKE) allows anyone to update a public key while simultaneously producing an update token, given which the secret key holder could consistently update the secret key. Furthermore, ciphertexts encrypted under the old public key remain secure even if the updated secret key is leaked -- a property much desired in secure messaging. All existing lattice-based constructions of UPKE update keys by a noisy linear shift. As the noise accumulates, these schemes either require super-polynomial-size moduli or an a priori bounded number of updates to maintain decryption correctness.</p> <p>Inspired by recent works on cryptography based on the lattice isomorphism problem, we propose an alternative way to update keys in lattice-based UPKE. Instead of shifting, we rotate them. As rotations do not induce norm growth, our construction supports an unbounded number of updates with a polynomial-size modulus. The security of our scheme is based on the LWE assumption over hollow matrices -- matrices which generate linear codes with non-trivial hull -- and the hardness of permutation code equivalence. Along the way, we also show that LWE over hollow matrices is as hard as LWE over uniform matrices, and that a leftover hash lemma holds for hollow matrices.</p></div>
+</details></li>
+<li><details>
+<summary><span class="pub-title">Improved Algorithms for Finding Fixed-Degree Isogenies Between Supersingular Elliptic Curves</span><br><span class="pub-author">B. Benčina, P. Kutas, S.-P. Merz, C. Petit, M. Stopar, C. Weitkämper.</span> <span class="pub-where">CRYPTO 2024.</span> <span class="pub-link"><a href="https://github.com/isogeny-finding/improved-isogeny-finding">artifacts</a>·<a href="https://doi.org/10.1007/978-3-031-68388-6_8">doi</a>·<a href="https://eprint.iacr.org/2023/1618">eprint</a></span></summary>
+<div class="pub-abs"><p>Finding isogenies between supersingular elliptic curves is a natural algorithmic problem which is known to be equivalent to computing the curves' endomorphism rings.</p> <p>When the isogeny is additionally required to have a specific known degree $d$, the problem appears to be somewhat different in nature, yet its hardness is also required in isogeny-based cryptography.</p> <p>Let $E_1, E_2$ be supersingular elliptic curves over $\mathbb{F}_{p^2}$. We present improved classical and quantum algorithms that compute an isogeny of degree $d$ between $E_1$ and $E_2$ if it exists. Let $d \approx p^{1/2+\epsilon}$ for some $\epsilon>0$. Our essentially memory-free algorithms have better time complexity than meet-in-the-middle algorithms, which require exponential memory storage, in the range $1/2<\epsilon<3/4$ on a classical computer. For quantum computers, we improve the time complexity in the range $0<\epsilon<5/2$.</p> <p>Our strategy is to compute the endomorphism rings of both curves, compute the reduced norm form associated to $Hom(E_1,E_2)$ and try to represent the integer  as a solution of this form. We present multiple approaches to solving this problem which combine guessing certain variables exhaustively (or use Grover's search in the quantum case) with methods for solving quadratic Diophantine equations such as Cornacchia's algorithm and multivariate variants of Coppersmith's method. For the different approaches, we provide implementations and experimental results. A solution to the norm form can be then be efficiently translated to recover the sought-after isogeny using well-known techniques. As a consequence of our results we show that a recently introduced signature scheme published at ACNS 2024 does not reach NIST level I security.</p></div>
+</details></li>
+<li><details>
+<summary><span class="pub-title">Properties of Lattice Isomorphism as a Cryptographic Group Action</span><br><span class="pub-author">B. Benčina, A. Budroni, J.-J. Chi-Domínguez, M. Kulkarni.</span> <span class="pub-where">PQCrypto 2024.</span> <span class="pub-link"><a href="https://github.com/JJChiDguez/lip-properties">artifacts</a>·<a href="https://doi.org/10.1007/978-3-031-62743-9_6">doi</a>·<a href="https://eprint.iacr.org/2023/1093">eprint</a></span></summary>
+<div class="pub-abs"><p>In recent years, the Lattice Isomorphism Problem (LIP) has served as an underlying assumption to construct quantum-resistant cryptographic primitives, e.g. the zero-knowledge proof and digital signature scheme by Ducas and van Woerden (Eurocrypt 2022), and the HAWK digital signature scheme (Asiacrypt 2022).</p> <p>While prior lines of work in group action cryptography, e.g. the works of Brassard and Yung (Crypto 1990), and more recently Alamati, De Feo, Montgomery and Patranabis (Asiacrypt 2020), focused on studying the discrete logarithm problem and isogeny-based problems in the group action framework, in recent years this framing has been used for studying the cryptographic properties of computational problems based on the difficulty of determining equivalence between algebraic objects. Examples include Permutation and Linear Code Equivalence Problems used in LESS (Africacrypt 2020), and the Tensor Isomorphism Problem (TCC 2019). This study delves into the quadratic form version of LIP, examining it through the lens of group actions.</p> <p>In this work we (1) give formal definitions and study the cryptographic properties of this group action (LIGA), (2) demonstrate that LIGA lacks both weak unpredictability and weak pseudorandomness, and (3) under certain assumptions, establish a theoretical trade-off between time complexity and the required number of samples for breaking weak unpredictability, for large dimensions. We also conduct experiments supporting our analysis. Additionally, we employ our findings to formulate new hard problems on quadratic forms.</p></div>
+</details></li>
+</ol>
+
+      </section>
+
+      <hr>
+      
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul>
+<li><span class="talk-title">On Local Invariants for Permutation Equivalence (Extended Abstract)</span><br><span class="talk-where">CBCrypto 2026 workshop presentation.</span> <span class="talk-link"><a href="https://drive.google.com/drive/folders/1mb1m7B4jpAIX1UdZHgw14kvYLI6e9PBZ">extended abstract</a>·<a href="#">slides</a></span></li>
+<li><span class="talk-title">— or, Adventures in the Arithmetic of Linear Codes</span><br><span class="talk-where">CDT showcase at the Cumberland Lodge in April 2026.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">—</span><br><span class="talk-where">Cryptography Seminar talk at Aalto University in March 2026.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">Post-Quantum Cryptographic Analysis of SSH</span><br><span class="talk-where">Cyber Security Seminar talk at University of Surrey in January 2026.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">Updatable Public-Key Encryption from Hollow Lattice Problems</span><br><span class="talk-where">London-ish Lattice Coding & Crypto Meeting in December 2025.</span> <span class="talk-link"><a href="https://londonishlatticemeetings.wordpress.com/15-december-2025-lattice-coding-crypto-meeting/">LCC</a>·<a href="https://londonishlatticemeetings.wordpress.com/wp-content/uploads/2025/12/ben.pdf">slides</a></span></li>
+<li><span class="talk-title">Hollow LWE: A New Spin, Unbounded Updatable Encryption from LWE and PCE</span><br><span class="talk-where">EUROCRYPT 2025 conference presentation.</span> <span class="talk-link"><a href="https://iacr.org/submit/files/slides/2025/eurocrypt/eurocrypt2025/283/283_slides.pdf">slides</a>·<a href="https://youtu.be/Rcqtc3YawRU&t=1171">video</a></span></li>
+<li><span class="talk-title">—</span><br><span class="talk-where">CDT showcase at the Cumberland Lodge in April 2025.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">Intro to PQC</span><br><span class="talk-where">2 hour guest lecture at University of Malawi in January 2025.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">LIP is Not Weakly Pseudorandom</span><br><span class="talk-where">MISCS Doctotal Conference presentation at RHUL in April 2024.</span> <span class="talk-link"><a href="https://gitlab.com/bbencina/miscs-2024-talk">slides</a></span></li>
+<li><span class="talk-title">Post-Quantum Cryptography</span><br><span class="talk-where">1 hour guest lecture in the Applications of Cryptography module at RHUL in December 2023, 2024, 2025.</span> <span class="talk-link"><a href="#">slides</a></span></li>
+<li><span class="talk-title">Uvod v post-kvantno kriptografijo</span><br><span class="talk-where">2 hour talk at UL FMF seminar for teachers of mathematics 2022/23.</span> <span class="talk-link"><a href="https://uc.fmf.uni-lj.si/mi/arhivpoletih/prog2223.html">archive</a>·<a href="https://uc.fmf.uni-lj.si/mi/indexENG.html">event</a>·<a href="https://gitlab.com/bbencina/crypto-workshop-2022">slides</a></span></li>
+<li><span class="talk-title">—</span><br><span class="talk-where">4 hour workshop at UL FMF Mathematics and Physics Summer School 2022.</span> <span class="talk-link"><a href="https://poletnasola.fmf.uni-lj.si/">event</a>·<a href="https://gitlab.com/bbencina/crypto-workshop-2022">slides and exercises</a></span></li>
+<li><span class="talk-title">Gröbner Bases and Algorithms Computing Them</span><br><span class="talk-where">Applied Algebra seminar talk at University of Zürich in May 2022.</span> <span class="talk-link"><a href="https://gitlab.com/bbencina/zgsm-talk">slides</a></span></li>
+<li><span class="talk-title">Gröbnerjeve baze</span><br><span class="talk-where">seminar talk at UL FMF in May 2021.</span> <span class="talk-link"><a href="https://gitlab.com/bbencina/gb-seminar-talk">slides</a></span></li>
+</ul>
+
+      </section>
+
+    </main>
+  </body>
+</html>
